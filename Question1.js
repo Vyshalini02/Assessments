@@ -53,7 +53,5 @@ let customers = [
 
 // //1) what items senior citizens have purchased >60
 let seniorcitizen = customers.filter(customer => customer.age > 60)
-    .map(customer => customer.f_name + " " + customer.l_name + ": " + customer.purchased)
-for (let i = 0; i < seniorcitizen.length; i++) {
-    console.log(`Products purchased by `, seniorcitizen[i]);
-}
+    .map(customer => customer.f_name + "" + customer.l_name + " " + customer.age + " " + customer.purchased)
+console.log(` Products purchased by: ${seniorcitizen}`);
